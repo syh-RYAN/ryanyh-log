@@ -1,7 +1,9 @@
 import PostCard from '@components/PostCard'
 import { TPosts, TTags } from '@/src/types'
 import { useRouter } from 'next/router'
-import React, { useEffect, useState } from 'react'
+import React, {CSSProperties, useEffect, useState} from 'react'
+import { FixedSizeList } from 'react-window';
+import css from "styled-jsx/css";
 
 type Props = {
   q: string
@@ -41,18 +43,33 @@ const PostList: React.FC<Props> = ({ q, posts, tags }) => {
     })
   }, [q, currentTag, currentOrder])
 
+  const Row = ({ index, style }: { index: number; style: CSSProperties}) => {
+    return (
+      <div style={style}>
+        <PostCard post={filteredPosts[index]} />
+      </div>
+    )
+  }
+
   return (
     <>
       <div className="my-2">
         {!filteredPosts.length && (
           <p className="text-gray-500 dark:text-gray-300">Nothing! 😺</p>
         )}
-        {filteredPosts.slice(0, 20).map((post) => (
-          <PostCard key={post.id} post={post} />
-        ))}
+        <FixedSizeList
+            height={1260}
+            itemCount={filteredPosts.length}
+            itemSize={200}
+            width={'inherit'}
+            className={'no-scrollbars'}
+            >
+            {Row}
+        </FixedSizeList>
       </div>
     </>
   )
 }
+
 
 export default PostList
