@@ -50,14 +50,14 @@ const CONFIG = {
       siteVerification: process.env.GOOGLE_SITE_VERIFICATION || ''
     }
   },
-  utterances: {
-    enable: true,
-    config: {
-      repo: 'siyeons/sian-log',
-      'issue-term': 'og:title',
-      label: '💬 Utterances',
-    }
-  },
+  // utterances: {
+  //   enable: false,
+  //   config: {
+  //     repo: 'siyeons/sian-log',
+  //     'issue-term': 'og:title',
+  //     label: '💬 Utterances',
+  //   }
+  // },
   isProd: process.env.VERCEL_ENV === 'production' // distinguish between development and production environment (ref: https://vercel.com/docs/environment-variables#system-environment-variables)
 }
 module.exports = CONFIG

@@ -9,7 +9,6 @@ import { TPost } from "@/src/types"
 import React from "react"
 import PostHeader from "./PostHeader"
 import Footer from "./PostFooter"
-import CommentBox from "./CommentBox"
 
 const mapPageUrl = (id: string) => {
   return "https://www.notion.so/" + id.replace(/-/g, "")
@@ -44,7 +43,6 @@ const PostDetail: React.FC<Props> = ({ blockMap, data }) => {
         {data.type[0] === "Post" && (
           <>
             <Footer />
-            <CommentBox data={data} />
           </>
         )}
       </article>
