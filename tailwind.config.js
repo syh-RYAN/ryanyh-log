@@ -8,7 +8,7 @@ module.exports = {
     extend: {
       colors: {
         day: {
-          DEFAULT: '#FFFF59'
+          DEFAULT: '#E2FFE8'
         },
         night: {
           DEFAULT: '#18181B'
