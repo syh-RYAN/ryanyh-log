@@ -1,32 +1,32 @@
 const CONFIG = {
   // profile setting (required)
   profile: {
-    name: 'sian',
-    image: '/avatar.png',  // If you want to create your own notion avatar, check out https://notion-avatar.vercel.app
-    role: 'frontend developer',
-    bio: 'Connecting the Dots!',
-    email: 'siyeonleeme@gmail.com',
+    name: '서영호',
+    image: '/title.png',  // If you want to create your own notion avatar, check out https://notion-avatar.vercel.app
+    role: 'Data Engineering',
+    bio: '초보개발자의 기술블로그!',
+    email: 'ryanyh.dev@gmail.com',
     linkedin: '',
-    github: 'siyeons',
+    github: 'syh-RYAN',
     instagram: '',
   },
   projects: [
     {
-      name: '',
-      href: ''
+      name: 'PlayData',
+      href: 'https://github.com/syh-RYAN/pythonbasic.git'
     }
   ],
   // blog setting (required)
   blog: {
-    title: 'sian-log',
-    description: 'welcome to sian-log!',
+    title: '귀여운 영호처럼',
+    description: 'welcome to ryanyh-log!',
     theme: 'light' // ['light', 'dark', 'auto']
   },
 
   // CONFIG configration (required)
-  link: 'https://sian-log.vercel.app',
-  since: 2022, // If leave this empty, current year will be used.
-  lang: 'en-US', // ['en-US', 'zh-CN', 'zh-HK', 'zh-TW', 'ja-JP', 'es-ES', 'ko-KR']
+  link: 'https://ryanyh-log.vercel.app',
+  since: 2023, // If leave this empty, current year will be used.
+  lang: 'ko-KR', // ['en-US', 'zh-CN', 'zh-HK', 'zh-TW', 'ja-JP', 'es-ES', 'ko-KR']
   ogImageGenerateURL: 'https://og-image-korean.vercel.app', // The link to generate OG image, don't end with a slash
   seo: {
     keywords: ['Blog', 'Website', 'Notion'],
