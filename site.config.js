@@ -13,7 +13,7 @@ const CONFIG = {
   projects: [
     {
       name: 'PlayData',
-      href: 'https://github.com/syh-RYAN/pythonbasic.git',
+      href: 'https://github.com/syh-RYAN/PlayData.git',
     }
   ],
   // blog setting (required)
