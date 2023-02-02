@@ -12,13 +12,9 @@ const CONFIG = {
   },
   projects: [
     {
-      name: 'PortFolio',
-      href: 'https://ryansyh.notion.site/SEO-YOUNG-HO-1f0249451f6a42eea60bbf2d4186a681',
-    },
-    {
       name: 'PlayData',
       href: 'https://github.com/syh-RYAN/pythonbasic.git',
-    },
+    }
   ],
   // blog setting (required)
   blog: {
