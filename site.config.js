@@ -15,6 +15,8 @@ const CONFIG = {
       name: '포토폴리오',
       href: 'https://ryansyh.notion.site/SEO-YOUNG-HO-1f0249451f6a42eea60bbf2d4186a681',
     },
+   ],
+    projects1:[
     {
       name: 'PlayData',
       href: 'https://github.com/syh-RYAN/PlayData.git',
